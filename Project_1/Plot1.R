@@ -1,6 +1,6 @@
 dataFile <- "household_power_consumption.txt"
 fullData <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
-subData <- fullData[dullData$Date %in% c("1/2/2007","2/2/2007") ,]
+subData <- fullData[fullData$Date %in% c("1/2/2007","2/2/2007") ,]
 
 #plotting
 globalActivePower <- as.numeric(subData$Global_active_power)
